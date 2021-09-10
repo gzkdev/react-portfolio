@@ -1,24 +1,16 @@
 import { Link } from 'react-router-dom'
+import { routeLinks } from '../RoutePaths'
 
-function SideBarMenu({ menuState }) {
+function SideBarMenu({ menuState, toggleMenu }) {
     return (
         <nav className={menuState}>
             <ul className="header-nav-list">
                 <li>
                     MENU
                 </li>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/">Projects</Link>
-                </li>
-                <li>
-                    <Link to="/">About</Link>
-                </li>
-                <li>
-                    <Link to="/">Contact</Link>
-                </li>
+                {routeLinks.map((item, index) => (
+                    <li key={index}><Link onClick={toggleMenu} to={item.path}>{item.text}</Link></li>
+                ))}
             </ul>
         </nav>
     )

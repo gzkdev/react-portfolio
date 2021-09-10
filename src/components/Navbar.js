@@ -26,18 +26,18 @@ function Navbar() {
                             <Link to="/">Home</Link>
                         </li>
                         <li>
-                            <Link to="/">Projects</Link>
+                            <Link to="/projects">Projects</Link>
                         </li>
                         <li>
-                            <Link to="/">About</Link>
+                            <Link to="/about">About</Link>
                         </li>
                         <li>
-                            <Link to="/">Contact</Link>
+                            <Link to="/contact">Contact</Link>
                         </li>
                     </ul>
                 </nav>
                 <div className={toggleState} onClick={toggleMenu}></div>
-                <SideBarMenu menuState={menu}></SideBarMenu>
+                <SideBarMenu toggleMenu={toggleMenu} menuState={menu}></SideBarMenu>
             </div>
         </header>
     )

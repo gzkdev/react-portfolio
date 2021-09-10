@@ -4,7 +4,7 @@ function ContactSection() {
     return (
         <section className="contact">
             <div className="contact-ctn ctn">
-                <SectionHeader headerType="section-header-alt" headingText='Get in Touch' paragraphText='Whether you have a project you want to bring me on or you want to say hi, feel free to contact me' ></SectionHeader>
+                <SectionHeader headerType="section-header-alt" headingText="Let's Make A Thing?" paragraphText='Whether you have a project you want to bring me on or you want us to discuss about how to help your business scale, feel free to contact me' ></SectionHeader>
 
                 <form className="form" autoComplete='off'>
                     <div className="form-input-ctn">
