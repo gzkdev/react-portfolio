@@ -32,15 +32,13 @@ function InspiroCarousel() {
 
     function handleMouseMove(e) {
         if (!isDown) return;
-        e.preventDefault();
         distance = e.pageX - dragPosition.current.offsetLeft;
-        position = (distance - startX) * 1;
+        position = (distance - startX) * 1.5;
         dragPosition.current.scrollLeft = scrollLeft - position;
     }
 
-
     return (
-        <div className={carouselState} onMouseDown={handleMouseDown} onMouseLeave={handleMouseLeave} onMouseUp={handleMouseUp} onMouseMove={handleMouseMove} ref={dragPosition}>
+        <div className={carouselState} onPointerDown={handleMouseDown} onPointerUp={handleMouseUp} onPointerLeave={handleMouseLeave} onPointerMove={handleMouseMove} ref={dragPosition}>
             <div className="inspiro-item"></div>
             <div className="inspiro-item"></div>
             <div className="inspiro-item"></div>

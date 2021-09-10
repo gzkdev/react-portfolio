@@ -251,8 +251,9 @@ section {
   display: flex;
   overflow: hidden;
   transition: 300ms;
-  padding-left: 64px;
+  padding-left: 24px;
   cursor: grab;
+  touch-action: none;
 }
 
 .inspiro-carousel.active {
@@ -395,6 +396,10 @@ section {
 
   .featured-project-box:nth-child(2n) {
     margin-left: auto;
+  }
+
+  .inspiro-carousel {
+    padding-left: 64px;
   }
 }
 
