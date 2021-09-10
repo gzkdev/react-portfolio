@@ -89,7 +89,7 @@ section {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 500ms ease-in-out;
+  transition: 350ms ease-in-out;
   z-index: 900;
 }
 
@@ -184,9 +184,8 @@ section {
   display: flex;
   flex-direction: column;
   font-size: 2.8rem;
-  color: transparent;
-  -webkit-text-stroke: 1.5px #1a1a1a;
   margin-bottom: 48px;
+  text-decoration: underline;
 }
 
 .intro-ctn p {
@@ -346,6 +345,9 @@ section {
 
   .intro-ctn h1 {
     flex-direction: row;
+    color: transparent;
+    -webkit-text-stroke: 1.5px #1a1a1a;
+    text-decoration: none;
   }
 
   .intro-ctn h1 span {
