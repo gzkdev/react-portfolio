@@ -326,7 +326,6 @@ body {
   text-decoration: none;
   color: inherit;
   pointer-events: all;
-  z-index: 1000;
 }
 
 .inspiro-item-img {
