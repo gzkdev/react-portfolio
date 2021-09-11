@@ -251,7 +251,8 @@ body {
   width: 100%;
 }
 
-.project-thumbnail {
+.project-thumbnail,
+.inspiro-item-img {
   width: 100%;
   object-fit: cover;
 }
@@ -292,8 +293,18 @@ body {
   width: 300px;
   min-height: 280px;
   margin-inline: 24px;
-  background: #ffbac0;
-  transition: 200ms;
+  transition: 400ms;
+}
+
+.inspiro-item a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.inspiro-text-box {
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
 }
 
 .inspiro-item:hover,

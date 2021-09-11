@@ -1,4 +1,7 @@
 import { useState, useRef } from "react"
+import { FaDribbble } from "react-icons/fa";
+
+import Image from '../assets/images/six.png'
 
 function InspiroCarousel() {
 
@@ -39,7 +42,14 @@ function InspiroCarousel() {
 
     return (
         <div className={carouselState} onPointerDown={handleMouseDown} onPointerUp={handleMouseUp} onPointerLeave={handleMouseLeave} onPointerMove={handleMouseMove} ref={dragPosition}>
-            <div className="inspiro-item"></div>
+            <div className="inspiro-item">
+                <a href="/#" target="_blank" rel="noopener noreferrer">
+                    <img src={Image} alt="" className="inspiro-item-img" />
+                    <div className="inspiro-text-box">
+                        <FaDribbble></FaDribbble>&nbsp;&nbsp;@zheeey
+                    </div>
+                </a>
+            </div>
             <div className="inspiro-item"></div>
             <div className="inspiro-item"></div>
             <div className="inspiro-item"></div>
