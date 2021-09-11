@@ -1,6 +1,5 @@
 import featuredProjectList from "../FeaturedProjectsContent"
 import { Link } from "react-router-dom"
-// import Image from '../assets/images/six.png'
 
 function FeaturedProjectsList() {
     return (
