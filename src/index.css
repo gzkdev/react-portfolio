@@ -292,6 +292,9 @@ body {
 
 .inspiro-item {
   flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
   width: 300px;
   min-height: 280px;
   margin-inline: 24px;
@@ -301,6 +304,10 @@ body {
 .inspiro-item a {
   text-decoration: none;
   color: inherit;
+}
+
+.inspiro-item-img {
+  box-shadow: 0 0 48px rgba(0, 0, 0, 0.12);
 }
 
 .inspiro-text-box {
@@ -316,6 +323,10 @@ body {
 
 .inspiro-item:nth-child(2n) {
   background: #8ad6f5;
+}
+
+.inspiro-item:nth-child(2) {
+  background: none;
 }
 
 .inspiro-item:nth-child(3n) {
