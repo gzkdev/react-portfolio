@@ -1,8 +1,10 @@
 import ContactSection from "../components/ContactSection"
 import Footer from "../components/Footer"
 import SectionHeader from "../components/SectionHeader"
+import GoToTop from '../GotoTop';
 
 function About() {
+    GoToTop();
     return (
         <>
             <section className="about">

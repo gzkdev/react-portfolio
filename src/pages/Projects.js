@@ -1,10 +1,12 @@
 import ContactSection from "../components/ContactSection";
 import Footer from "../components/Footer";
 import SectionHeader from "../components/SectionHeader"
+import GoToTop from "../GotoTop";
 
 const projectsArchive = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11];
 
 function Projects() {
+    GoToTop();
     return (
         <>
             <><section className="projects" id="projects">
