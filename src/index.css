@@ -249,8 +249,11 @@ body {
 
 .project-img-box {
   width: 100%;
-  height: 300px;
-  background: #999;
+}
+
+.project-thumbnail {
+  width: 100%;
+  object-fit: cover;
 }
 
 .project-text-box {
@@ -432,10 +435,6 @@ body {
     padding-top: 168px;
   }
 
-  .project-img-box {
-    height: 400px;
-  }
-
   .project-text-box {
     margin: 24px 0px;
     text-align: start;
@@ -524,9 +523,6 @@ body {
 
   .intro-ctn h1 span {
     margin-right: 24px;
-  }
-  .project-img-box {
-    height: 560px;
   }
 }
 

@@ -10,11 +10,8 @@ function FeaturedProjectsList() {
                     <div className="featured-project-box" key={project.id}>
                         <div className="project-img-box">
                             <Link to="/projects">
-                                <img src={project.image} alt="" style={{
-                                    width: "100%",
-                                    height: '100%',
-                                    objectFit: "cover"
-                                }} />
+                                <img src={project.image} className="project-thumbnail" alt={project.description}
+                                />
                             </Link>
                         </div>
                         <p className="project-text-box">
