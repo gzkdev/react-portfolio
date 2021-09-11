@@ -24,10 +24,24 @@ html {
 }
 
 :root {
+  --color100: #1df268;
+  --color200: #fdd778;
+  --color300: #2be6ff;
+  --color400: #ffc0e7;
+  --color410: #ff7aed;
+  --color500: #0ca7fd;
+  --color600: #0d000d;
+  --color610: #3a3a3a;
+  --color700: #ffffff;
   --max-width: 1140px;
   --max-width-alt: 1440px;
   --page-heading-size: 2.8rem;
   --page-banner-height: 280px;
+}
+
+*::selection {
+  color: var(--color600);
+  background: var(--color200);
 }
 
 body {
@@ -40,8 +54,8 @@ body {
     Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  color: #444;
-  background: #fff;
+  color: var(--color610);
+  background: var(--color700);
   word-spacing: 4px;
   overflow-x: hidden;
 }
@@ -219,14 +233,22 @@ body {
 }
 
 .intro-ctn {
-  padding: 104px 0px 48px;
+  padding: 144px 0px 48px;
 }
 
 .intro-ctn h1 {
   display: flex;
   flex-direction: column;
   font-size: var(--page-heading-size);
-  color: #222627;
+  color: transparent;
+  background: linear-gradient(
+      90deg,
+      var(--color500),
+      var(--color300),
+      var(--color100) 90%
+    )
+    no-repeat;
+  background-clip: text;
   margin-bottom: 48px;
 }
 
@@ -250,7 +272,6 @@ body {
 .project-img-box {
   width: 100%;
   min-height: 300px;
-  /* background: #cbcbcc; */
 }
 
 .project-thumbnail,
@@ -276,7 +297,7 @@ body {
   width: auto;
   margin: 64px 0px;
   display: flex;
-  overflow: hidden;
+  overflow-x: hidden;
   transition: 300ms;
   padding-left: 24px;
   cursor: -webkit-grab;
@@ -287,7 +308,6 @@ body {
 .inspiro-carousel.active {
   cursor: grabbing;
   cursor: -webkit-grabbing;
-  transform: scale(0.98);
 }
 
 .inspiro-item {
@@ -299,11 +319,14 @@ body {
   min-height: 280px;
   margin-inline: 24px;
   transition: 400ms;
+  pointer-events: none;
 }
 
 .inspiro-item a {
   text-decoration: none;
   color: inherit;
+  pointer-events: all;
+  z-index: 1000;
 }
 
 .inspiro-item-img {
@@ -316,25 +339,13 @@ body {
   margin-top: 24px;
 }
 
+.inspiro-text-box > svg {
+  color: var(--color410);
+}
+
 .inspiro-item:hover,
 .inspiro-item:focus {
-  transform: scale(1.02);
-}
-
-.inspiro-item:nth-child(2n) {
-  background: #8ad6f5;
-}
-
-.inspiro-item:nth-child(2) {
-  background: none;
-}
-
-.inspiro-item:nth-child(3n) {
-  background: #ff7aed;
-}
-
-.inspiro-item:nth-child(4n) {
-  background: #acf58a;
+  transform: scale(0.98);
 }
 
 .form {
@@ -477,7 +488,7 @@ body {
   .intro-ctn h1 {
     flex-direction: row;
     color: transparent;
-    -webkit-text-stroke: 1.5px #1a1a1a;
+    /* -webkit-text-stroke: 1.5px #1a1a1a; */
   }
 
   .intro-ctn h1 span {

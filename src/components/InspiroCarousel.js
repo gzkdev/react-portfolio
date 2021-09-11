@@ -1,8 +1,6 @@
 import { useState, useRef } from "react"
 import { FaDribbble } from "react-icons/fa";
-
-import Image from '../assets/images/six.png'
-import Image02 from '../assets/images/one.jpg'
+import InspiroItems from "../InspiroCarouselContents";
 
 function InspiroCarousel() {
 
@@ -43,32 +41,17 @@ function InspiroCarousel() {
 
     return (
         <div className={carouselState} onPointerDown={handleMouseDown} onPointerUp={handleMouseUp} onPointerLeave={handleMouseLeave} onPointerMove={handleMouseMove} ref={dragPosition}>
-            <div className="inspiro-item">
-                <a href="/#" target="_blank" rel="noopener noreferrer">
-                    <img src={Image} alt="" className="inspiro-item-img" />
-                    <div className="inspiro-text-box">
-                        <FaDribbble></FaDribbble>&nbsp;&nbsp;@zheeey
-                    </div>
-                </a>
-            </div>
-            <div className="inspiro-item">
-                <a href="/#" target="_blank" rel="noopener noreferrer">
-                    <img src={Image02} alt="" className="inspiro-item-img" />
-                    <div className="inspiro-text-box">
-                        <FaDribbble></FaDribbble>&nbsp;&nbsp;@zheeey
-                    </div>
-                </a>
-            </div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
-            <div className="inspiro-item"></div>
+
+            {InspiroItems.map((item, index) => (
+                <div className="inspiro-item">
+                    <img src={item.image} alt="" className="inspiro-item-img" />
+                    <a href={item.link} target="_blank" rel="noopener noreferrer">
+                        <div className="inspiro-text-box">
+                            <FaDribbble></FaDribbble>&nbsp;&nbsp;@zheeey
+                        </div>
+                    </a>
+                </div>
+            ))}
         </div>
     )
 }
