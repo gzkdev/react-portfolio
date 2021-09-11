@@ -466,18 +466,6 @@ body {
 }
 
 @media (min-width: 768px) {
-  .about-ctn {
-    display: flex;
-    justify-content: space-between;
-  }
-
-  .about-img-box {
-    position: -webkit-sticky;
-    position: sticky;
-    top: 160px;
-    margin-right: 64px;
-  }
-
   :root {
     --page-banner-height: 400px;
   }
@@ -507,7 +495,7 @@ body {
 
   .header-nav-desktop ul li {
     display: inline-block;
-    margin-right: 24px;
+    margin-right: 48px;
     list-style: none;
   }
 
@@ -537,6 +525,17 @@ body {
 
   .footer-nav a .text {
     display: inline-block;
+  }
+  .about-ctn {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .about-img-box {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 160px;
+    margin-right: 64px;
   }
 }
 
