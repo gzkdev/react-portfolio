@@ -35,7 +35,7 @@ html {
   --color700: #ffffff;
   --max-width: 1140px;
   --max-width-alt: 1440px;
-  --page-heading-size: 2.8rem;
+  --page-heading-size: 2.4rem;
   --page-banner-height: 280px;
 }
 
@@ -240,15 +240,6 @@ body {
   display: flex;
   flex-direction: column;
   font-size: var(--page-heading-size);
-  color: transparent;
-  background: linear-gradient(
-      90deg,
-      var(--color500),
-      var(--color300),
-      var(--color100) 90%
-    )
-    no-repeat;
-  background-clip: text;
   margin-bottom: 48px;
 }
 
@@ -329,6 +320,7 @@ body {
 }
 
 .inspiro-item-img {
+  max-height: 300px;
   box-shadow: 0 0 48px rgba(0, 0, 0, 0.12);
 }
 
@@ -426,7 +418,7 @@ body {
   text-decoration: none;
   font-size: 1.5rem;
   color: #999;
-  background: linear-gradient(#acf58a, #acf58a) no-repeat;
+  background: linear-gradient(var(--color100), var(--color100)) no-repeat;
   background-position: left bottom;
   padding: 4px 0px;
   background-size: 0% 2px;
@@ -478,6 +470,7 @@ body {
 @media (min-width: 768px) {
   :root {
     --page-banner-height: 400px;
+    --page-heading-size: 3.2rem;
   }
 
   body {
@@ -486,8 +479,8 @@ body {
 
   .intro-ctn h1 {
     flex-direction: row;
-    color: transparent;
-    /* -webkit-text-stroke: 1.5px #1a1a1a; */
+    /* color: transparent;
+    -webkit-text-stroke: 1.6px #1a1a1a; */
   }
 
   .intro-ctn h1 span {
