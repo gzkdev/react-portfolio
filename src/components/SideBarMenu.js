@@ -1,3 +1,4 @@
+import { motion } from 'framer-motion'
 import { Link } from 'react-router-dom'
 import { routeLinks } from '../RoutePaths'
 
@@ -9,10 +10,14 @@ function SideBarMenu({ menuState, toggleMenu }) {
                     MENU
                 </li>
                 {routeLinks.map((item, index) => (
-                    <li key={index}><Link onClick={toggleMenu} to={item.path}>{item.text}</Link></li>
+                    <motion.li
+                        whileHover={{ scale: 1.2, originX: 0 }}
+                        transition={{ type: "spring" }}
+                        key={index}
+                    ><Link onClick={toggleMenu} to={item.path}>{item.text}</Link></motion.li>
                 ))}
             </ul>
-        </nav>
+        </nav >
     )
 }
 

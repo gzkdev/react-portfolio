@@ -43,7 +43,8 @@ function InspiroCarousel() {
         <div className={carouselState} onPointerDown={handleMouseDown} onPointerUp={handleMouseUp} onPointerLeave={handleMouseLeave} onPointerMove={handleMouseMove} ref={dragPosition}>
 
             {InspiroItems.map((item, index) => (
-                <div className="inspiro-item">
+                <div
+                    className="inspiro-item">
                     <img src={item.image} alt="" className="inspiro-item-img" />
                     <a href={item.link} target="_blank" rel="noopener noreferrer">
                         <div className="inspiro-text-box">

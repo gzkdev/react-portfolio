@@ -1,8 +1,15 @@
 import { useState } from "react"
 import { Link } from "react-router-dom";
 import SideBarMenu from "./SideBarMenu"
+import { motion } from 'framer-motion'
 
 function Navbar() {
+    const NavRoutes = [
+        { title: "Home", link: "/" },
+        { title: "Projects", link: "/projects" },
+        { title: "About", link: "/about" },
+        { title: "Contact", link: "/contact" }
+    ]
     const [menu, setMenu] = useState("header-nav");
     const [toggleState, setToggleState] = useState('header-menu-toggle')
 
@@ -19,24 +26,18 @@ function Navbar() {
     return (
         <header className="header">
             <div className="header-ctn ctn">
-                <div className="header-logo">ezihe <br />godswill</div>
+                <div className="header-logo">ezihe<br />godswill</div>
                 <nav className="header-nav-desktop">
                     <ul>
-                        <li>
-                            <Link to="/">Home</Link>
-                        </li>
-                        <li>
-                            <Link to="/projects">Projects</Link>
-                        </li>
-                        <li>
-                            <Link to="/about">About</Link>
-                        </li>
-                        <li>
-                            <Link to="/contact">Contact</Link>
-                        </li>
+                        {NavRoutes.map((navItem, index) => (
+                            <motion.li key={index}
+                                whileHover={{ scale: 1.2 }}
+                            ><Link to={navItem.link}>{navItem.title}</Link>
+                            </motion.li>
+                        ))}
                     </ul>
                 </nav>
-                <div className={toggleState} onClick={toggleMenu}></div>
+                <motion.div whileHover={{ scale: 1.2 }} className={toggleState} onClick={toggleMenu}></motion.div>
                 <SideBarMenu toggleMenu={toggleMenu} menuState={menu}></SideBarMenu>
             </div>
         </header>
