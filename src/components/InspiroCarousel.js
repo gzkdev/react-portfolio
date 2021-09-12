@@ -44,7 +44,7 @@ function InspiroCarousel() {
 
             {InspiroItems.map((item, index) => (
                 <div
-                    className="inspiro-item">
+                    className="inspiro-item" key={index}>
                     <img src={item.image} alt="" className="inspiro-item-img" />
                     <a href={item.link} target="_blank" rel="noopener noreferrer">
                         <div className="inspiro-text-box">
