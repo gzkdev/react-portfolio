@@ -1,4 +1,4 @@
-import Img01 from './assets/images/three.png'
+import Img01 from './assets/images/nine.png'
 import Img02 from './assets/images/four.jpg'
 import Img03 from './assets/images/five.png'
 import Img04 from './assets/images/six.png'
@@ -7,7 +7,7 @@ const featuredProjectList = [{
     name: "NAU App",
     description: "accesible and optimized mobile app for students and staff",
     image: Img01,
-    link: "/projects/1",
+    link: "/projects/nau-app",
     id: 1
 
 },

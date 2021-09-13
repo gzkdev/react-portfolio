@@ -6,6 +6,7 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { AnimatePresence } from 'framer-motion';
+import ProjectNAUApp from './ProjectNAUApp';
 
 
 function App() {
@@ -27,6 +28,9 @@ function App() {
           </Route>
           <Route path="/contact" exact>
             <Contact></Contact>
+          </Route>
+          <Route path="/projects/nau-app" exact>
+            <ProjectNAUApp></ProjectNAUApp>
           </Route>
         </Switch>
       </AnimatePresence>

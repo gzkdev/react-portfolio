@@ -8,7 +8,7 @@ function FeaturedProjectsList() {
                 featuredProjectList.map(project => (
                     <div className="featured-project-box" key={project.id}>
                         <div className="project-img-box">
-                            <Link to="/projects">
+                            <Link to={project.link}>
                                 <img src={project.image} className="project-thumbnail" alt={project.description}
                                 />
                             </Link>
