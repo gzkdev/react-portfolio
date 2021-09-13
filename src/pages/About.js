@@ -15,9 +15,9 @@ function About() {
                     <div className="about-ctn">
                         <div className="about-img-box"></div>
                         <div className="about-text-ctn">
-                            <span className="about-text-ctn-title">I'm Ezihe Godswill </span>&nbsp;<span>@zheeey</span>
+                            <span className="about-text-ctn-title">I'm Ezihe Godswill ⚡</span>
                             <p>
-                                I'm a front-end software engineer and UI designer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus obcaecati aperiam eaque soluta enim quibusdam eius facilis beatae temporibus officia recusandae assumenda inventore nemo hic, illum, voluptas voluptates possimus maiores at consequuntur numquam. Dicta aperiam amet ipsam molestiae porro, repudiandae odit, nisi magnam earum, repellendus praesentium ratione delectus vel itaque beatae quibusdam quod corrupti in temporibus? Sed ullam, totam aut aliquam quidem facere.
+                                A front-end software engineer and UI designer. Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero repellendus obcaecati aperiam eaque soluta enim quibusdam eius facilis beatae temporibus officia recusandae assumenda inventore nemo hic, illum, voluptas voluptates possimus maiores at consequuntur numquam. Dicta aperiam amet ipsam molestiae porro, repudiandae odit, nisi magnam earum, repellendus praesentium ratione delectus vel itaque beatae quibusdam quod corrupti in temporibus? Sed ullam, totam aut aliquam quidem facere.
                             </p>
 
                             <p>

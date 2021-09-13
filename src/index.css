@@ -1,12 +1,12 @@
 @font-face {
   font-family: Urbanist;
-  src: url(assets/fonts/Urbanist-Medium.ttf);
+  src: url(assets/fonts/Urbanist-Medium.woff);
   font-weight: 400;
 }
 
 @font-face {
   font-family: Urbanist;
-  src: url(assets/fonts/Urbanist-Bold.ttf);
+  src: url(assets/fonts/Urbanist-Bold.woff);
   font-weight: bold;
 }
 
