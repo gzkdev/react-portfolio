@@ -6,7 +6,8 @@ import Projects from './pages/Projects';
 import About from './pages/About';
 import Contact from './pages/Contact';
 import { AnimatePresence } from 'framer-motion';
-import ProjectNAUApp from './ProjectNAUApp';
+import ProjectNAUApp from './pages/ProjectNAUApp';
+import ProjectGitMigo from './pages/ProjectGitMigo';
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
           </Route>
           <Route path="/projects/nau-app" exact>
             <ProjectNAUApp></ProjectNAUApp>
+          </Route>
+          <Route path="/projects/gitmigo" exact>
+            <ProjectGitMigo></ProjectGitMigo>
           </Route>
         </Switch>
       </AnimatePresence>

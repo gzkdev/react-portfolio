@@ -15,7 +15,7 @@ const featuredProjectList = [{
     name: "ULearn",
     description: "Dashboard for a modern e-learning platform for creatives",
     image: Img02,
-    link: "/projects/1",
+    link: "/projects/gitmigo",
     id: 2
 
 },

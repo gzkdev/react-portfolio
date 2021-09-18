@@ -1,15 +1,15 @@
 import { motion } from "framer-motion"
-import containerVariants from "./RoutesContainerVariants"
-import SectionHeader from "./components/SectionHeader"
-import ContactSection from "./components/ContactSection"
-import Footer from "./components/Footer"
-import ImgOne from './assets/images/nine.png'
-import ImgTwo from './assets/images/seven.png'
-import ImgThree from './assets/images/eight.png'
-import ImgFour from './assets/images/nine.png'
-import ImgFive from './assets/images/ten.png'
-import GoToTop from "./GotoTop"
-import NextProjectRedirect from "./components/NextProjectRedirect"
+import containerVariants from "../RoutesContainerVariants"
+import SectionHeader from "../components/SectionHeader"
+import ContactSection from "../components/ContactSection"
+import Footer from "../components/Footer"
+import ImgOne from '../assets/images/nine.png'
+import ImgTwo from '../assets/images/seven.png'
+import ImgThree from '../assets/images/eight.png'
+import ImgFour from '../assets/images/nine.png'
+import ImgFive from '../assets/images/ten.png'
+import GoToTop from "../GotoTop"
+import NextProjectRedirect from "../components/NextProjectRedirect"
 
 function ProjectNAUApp() {
     GoToTop();
@@ -69,7 +69,7 @@ function ProjectNAUApp() {
                     <div className="page-main-banner-alt">
                         <img src={ImgTwo} alt="" />
                     </div>
-                    <NextProjectRedirect nextPojectLink='/projects'></NextProjectRedirect>
+                    <NextProjectRedirect nextPojectLink='/projects/gitmigo'></NextProjectRedirect>
                 </div>
             </section>
             <ContactSection></ContactSection>
