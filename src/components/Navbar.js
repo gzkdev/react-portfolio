@@ -26,7 +26,7 @@ function Navbar() {
     return (
         <header className="header">
             <div className="header-ctn ctn">
-                <div className="header-logo">ezihe<br />godswill</div>
+                <div className="header-logo"><Link to="/">godswill.</Link></div>
                 <nav className="header-nav-desktop">
                     <ul>
                         {NavRoutes.map((navItem, index) => (
@@ -37,7 +37,7 @@ function Navbar() {
                         ))}
                     </ul>
                 </nav>
-                <motion.div whileHover={{ scale: 1.2 }} className={toggleState} onClick={toggleMenu}></motion.div>
+                <div className={toggleState} onClick={toggleMenu}></div>
                 <SideBarMenu toggleMenu={toggleMenu} menuState={menu}></SideBarMenu>
             </div>
         </header>
